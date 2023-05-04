@@ -1,0 +1,37 @@
+"""
+35.date and time.py
+in many function refer for the w3 school function for date time
+"""
+import datetime as dt
+current_date=dt.date.today()
+print("current Date:",current_date)
+new=dt.date(2023,11,10)
+print(new)
+print("year:",new.year)
+print("Month:",new.month)
+print("day:",new.day)
+print("___________________")
+a=dt.time(10,45,6,666666)
+print(a)
+print("Hour:",a.hour)
+print("minutes:",a.minute)
+print("second:",a.second)
+print("microseconds:",a.microsecond)
+print("___________________")
+current_time=dt.datetime.now()
+print(current_time)
+print("____________________")
+new=dt.datetime(2021,5,31,12,2,10)
+print(new)
+print(new.date())
+print(new.time())
+print("____________________")
+current=dt.datetime.now()
+new_year=dt.datetime(2024,1,1)
+diffrence=new_year-current
+print("welcome to next year:",diffrence)
+print("____________________")
+current=dt.datetime.now()
+print(current)
+s=current.strftime("%A %B %d %Y")
+print(s)
